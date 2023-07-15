@@ -44,6 +44,10 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
+# gem "webpacker", "~> 5.4.3"
+
+gem "stimulus_reflex"
+
 
 # Use Sass to process CSS
 # gem "sassc-rails"
@@ -68,4 +72,6 @@ group :development do
 end
 
 
-gem "stimulus_reflex"
+
+
+gem "devise", "~> 4.9"
