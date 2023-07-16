@@ -46,7 +46,8 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 # gem "webpacker", "~> 5.4.3"
 
-gem "stimulus_reflex"
+gem "stimulus_reflex", '=3.5.0.rc3'
+gem 'inline_svg'
 
 
 # Use Sass to process CSS

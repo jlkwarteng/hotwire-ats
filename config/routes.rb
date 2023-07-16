@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users,  path: '',
+  controllers: {
+    registrations: 'users/registrations'
+  },
+  path_names: {
+    sign_in: 'login',
+    password: 'forgot',
+    confirmation: 'confirm',
+    sign_up: 'sign_up',
+    sign_out: 'signout'
+  }
   root 'dashboard#index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

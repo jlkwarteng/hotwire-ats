@@ -4,10 +4,14 @@
 
 import { application } from "./application"
 
+import AlertController from "./alert_controller"
+application.register("alert", AlertController)
+
+import ApplicationController from "./application_controller"
+application.register("application", ApplicationController)
+
+import ExampleController from "./example_controller"
+application.register("example", ExampleController)
+
 import HelloController from "./hello_controller"
-import StimulusReflex from 'stimulus_reflex'
-import consumer from '../channels/consumer'
-import controller from '../controllers/application_controller'
 application.register("hello", HelloController)
-StimulusReflex.initialize(application, { consumer, controller, isolate: true })
-StimulusReflex.debug = process.env.RAILS_ENV === 'development'
