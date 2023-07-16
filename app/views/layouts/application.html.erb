@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   </head>
 
- <body>
+ <body data-contoller='slideover' >
   <div class="flex flex-col h-screen justify-between px-4 md:px-0">
      <%= render "nav/top_nav" %>
     <main class="mb-auto w-full">
@@ -24,5 +24,6 @@
       <%= render "shared/flash", level: key, content: value %>
     <% end %>
   </div>
+  <%= render 'shared/slideover' %>
 </body>
 </html>

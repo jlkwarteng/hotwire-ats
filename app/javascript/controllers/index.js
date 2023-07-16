@@ -15,3 +15,6 @@ application.register("example", ExampleController)
 
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
+
+import SlideoverController from "./slideover_controller"
+application.register("slideover", SlideoverController)
