@@ -13,7 +13,7 @@ export default class extends Controller {
   };
 
   initialize() {
-    // this.hide();
+    this.hide();
   }
 
   connect() {

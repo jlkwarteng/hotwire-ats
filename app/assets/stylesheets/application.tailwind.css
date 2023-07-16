@@ -8,4 +8,5 @@
 @import "tailwindcss/utilities";
 @import "forms.css";
 @import 'animation.css';
-@import 'slideover.css'
+@import 'slideover.css';
+@import 'actiontext.css';

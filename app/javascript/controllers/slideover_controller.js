@@ -3,7 +3,11 @@ import { Controller } from "@hotwired/stimulus";
 export default class extends Controller {
   static targets = ["slideover"];
 
+  initialize() {
+    console.log("Connecting>>>");
+  }
   connect() {
+    console.log("Connecting>>>");
     this.backgroundHtml = this.backgroundHTML();
     this.visible = false;
   }
