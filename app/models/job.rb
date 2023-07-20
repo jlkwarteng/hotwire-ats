@@ -2,6 +2,7 @@ class Job < ApplicationRecord
   belongs_to :account
   validates_presence_of :title, :status, :job_type, :location
   has_rich_text :description
+  has_many :applicants
 
   enum status: {
     draft: 'draft',
@@ -13,4 +14,5 @@ class Job < ApplicationRecord
     full_time: 'full_time',
     part_time: 'part_time'
   }
+  
 end

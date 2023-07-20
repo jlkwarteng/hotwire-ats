@@ -13,10 +13,12 @@ export default class extends Controller {
   };
 
   initialize() {
+    console.log("INITINGG>>>>");
     this.hide();
   }
 
   connect() {
+    console.log("CONNECTING>>>>");
     setTimeout(() => {
       this.show();
     }, 50);

@@ -10,6 +10,9 @@ application.register("alert", AlertController)
 import ApplicationController from "./application_controller"
 application.register("application", ApplicationController)
 
+import DragController from "./drag_controller"
+application.register("drag", DragController)
+
 import ExampleController from "./example_controller"
 application.register("example", ExampleController)
 

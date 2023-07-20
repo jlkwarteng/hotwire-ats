@@ -3,6 +3,7 @@ import "@hotwired/turbo-rails";
 import "./controllers";
 import { Application } from "@hotwired/stimulus";
 import StimulusReflex from "stimulus_reflex";
+import * as ActiveStorage from "@rails/activestorage";
 
 import consumer from "./channels/consumer";
 import CableReady from "cable_ready";
@@ -13,7 +14,7 @@ import "@rails/actiontext";
 mrujs.start({
   plugins: [new CableCar(CableReady)],
 });
-
+ActiveStorage.start();
 const application = Application.start();
 
 // Configure Stimulus development experience
