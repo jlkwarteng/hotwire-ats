@@ -48,7 +48,8 @@ gem "bootsnap", require: false
 
 gem "stimulus_reflex", '=3.5.0.rc3'
 gem 'inline_svg'
-
+gem 'sidekiq'
+gem 'sidekiq-failures'
 
 # Use Sass to process CSS
 # gem "sassc-rails"
